@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #020617, #000);
+    color: #e5e7eb;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1e293b;
+    background: linear-gradient(180deg, #020617, #020617cc);
+}
+
+.brand h1 {
+    color: #7dd3fc;
+    font-size: 22px;
+}
+
+.brand p {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* CONTROLS */
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.controls input {
+    width: 140px;
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: white;
+}
+
+.btn {
+    padding: 9px 16px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.build {
+    background: linear-gradient(90deg, #22d3ee, #3b82f6);
+    color: #020617;
+}
+
+.reset {
+    background: #1e293b;
+    color: #cbd5f5;
+}
+
+/* MAIN */
+main {
+    padding: 30px;
+}
+
+main h2 {
+    margin-bottom: 15px;
+    color: #a5b4fc;
+}
+
+#tree {
+    position: relative;
+    height: 500px;
+    background: linear-gradient(180deg, #020617, #000);
+    border-radius: 20px;
+    border: 1px solid #1e293b;
+}
+
+/* NODES */
+.node {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #60a5fa, #6366f1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* EDGES */
+.line {
+    position: absolute;
+    height: 2px;
+    background: #64748b;
+    transform-origin: left center;
+}
